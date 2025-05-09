@@ -3,6 +3,7 @@ import os
 import shutil
 
 working_folder = ""
+script_dir = os.path.dirname(os.path.abspath(__file__))
 exiftool_path = os.path.join(script_dir, "exiftool", "exiftool.exe")
 
 def rating_check(full_file_path):
@@ -51,5 +52,4 @@ def path_check():
 def open_folder():
     print ("opening:", (working_folder))
     os.startfile(working_folder)
-
 
